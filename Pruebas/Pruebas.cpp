@@ -1,73 +1,56 @@
-// p004.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-// Disdem
-// Realizare un consultorio medico en el cual solicito 3 bool 2 string 1 char 1 float
-// Al final entrega tu IMC
-
+// P004_IMC_V0.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+// DANIEL REYES CANO
+// Crear un algoritmo que al final nos entregue el IMC del usuaraio 🙂
 
 #include <iostream>
 #include <locale.h>
 #include <string>
 
-
-
 int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
     bool sintoma1, sintoma2, sintoma3;
-    std::string nombre;
-    std::string relato;
+    std::string Nombre;
+    std::string Relato;
     char sexo;
     int edad;
     int peso;
     float altura;
     float IMC;
+    std::cout << "Bienvenido al consultorio de Amerike!\n";
+    std::cout << "Cual es tu nombre? " << std::endl; 
+    getline(std::cin, Nombre); 
+  
 
-    std::cout << "Usuario dime tienes fiebre 1-si, 0-no;" <<
-        std::endl;
-    std::cin >> sintoma1;
-    std::cout << "Usuario dime tienes dolores de cabeza ;" <<
-        std::endl;
-    std::cin >> sintoma2;
-    std::cout << "Usuario dime tienes cuerpo cortado ;" <<
-        std::endl;
-    std::cin >> sintoma3;
-    std::cout << "Usuario dime tu nombre;" <<
-        std::endl;
-    std::cin >> nombre;
-    std::cout << "Cuentame tu relato ;" <<
-        std::endl;
-    std::cin >> relato;
-    std::cout << "Usuario dime eres Hombre(H) o Mujer(M);" <<
-        std::endl;
+     std::cout << "\n ¿Cuentame que es lo que te suede?\n";
+    getline(std::cin, Relato);
+
+
+    std::cout << "Eres hombre o mujer? Coloca M para mujer y H para hombre\n";
     std::cin >> sexo;
-    std::cout << "Usuario dime cual es tu peso ;" <<
-        std::endl;
-    std::cin >> peso;
-    std::cout << " dime cual es tu edad ;" <<
-        std::endl;
+
+    std::cout << "Responde a la siguientes preguntas con 1 si tu respuesta es si y 0 si tu respuesta es no\n";
+    std::cout << "¿Tienes fiebre?\n";
+    std::cin >> sintoma1;
+
+    std::cout << "¿Te duele el estomago?\n";
+    std::cin >> sintoma2;
+
+    std::cout << "¿tiene dolor de cabeza?\n";
+    std::cin >> sintoma3;
+
+    std::cout << "¿Cuantos años tienes?\n";
     std::cin >> edad;
-    std::cout << "Usuario dime cual es tu altura ;" <<
-        std::endl;
+
+    std::cout << "¿Cuanto pesas?\n";
+    std::cin >> peso;
+
+    std::cout << "¿Cual es tu altura?\n";
     std::cin >> altura;
 
-    IMC = peso / altura;
-    std::cout << "Tu indie de masa corporal " << IMC << std::endl;
 
+    IMC = peso / (altura * altura);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    std::cout << "Tu IMC es de\n";
+    std::cout << IMC;
 }
