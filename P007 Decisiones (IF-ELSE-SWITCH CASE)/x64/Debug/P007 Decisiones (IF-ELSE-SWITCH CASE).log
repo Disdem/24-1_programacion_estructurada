@@ -1,0 +1,11 @@
+﻿  P007 Decisiones (IF-ELSE-SWITCH CASE).cpp
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(22,9): error C2371: 'G1': nueva definición; tipos básicos distintos
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(21,17): message : vea la declaración de 'G1'
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(23,9): error C2371: 'G2': nueva definición; tipos básicos distintos
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(21,34): message : vea la declaración de 'G2'
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(28,18): error C2088: '>>': no es válido para class
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(30,18): error C2088: '>>': no es válido para class
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(31,16): error C2088: '==': no es válido para class
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(37,20): error C2088: '<': no es válido para class
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(39,54): error C2088: '<<': no es válido para class
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P007 Decisiones (IF-ELSE-SWITCH CASE)\P007 Decisiones (IF-ELSE-SWITCH CASE).cpp(43,54): error C2088: '<<': no es válido para class

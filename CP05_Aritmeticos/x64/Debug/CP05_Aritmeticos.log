@@ -1,0 +1,4 @@
+﻿  CP05_Aritmeticos.cpp
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\CP05_Aritmeticos\CP05_Aritmeticos.cpp(25,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\CP05_Aritmeticos\CP05_Aritmeticos.cpp(64,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
+  CP05_Aritmeticos.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\CP05_Aritmeticos\x64\Debug\CP05_Aritmeticos.exe
