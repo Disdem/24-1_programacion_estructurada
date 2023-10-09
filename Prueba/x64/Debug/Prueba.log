@@ -1,4 +1,0 @@
-﻿  Prueba.cpp
-C:\Users\LABORATORIO 207A\Desktop\24-1_programacion_estructurada\Prueba\Prueba.cpp(25,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\LABORATORIO 207A\Desktop\24-1_programacion_estructurada\Prueba\Prueba.cpp(63,12): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Prueba.vcxproj -> C:\Users\LABORATORIO 207A\Desktop\24-1_programacion_estructurada\Prueba\x64\Debug\Prueba.exe
