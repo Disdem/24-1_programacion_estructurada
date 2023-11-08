@@ -1,4 +1,2 @@
 ﻿  P013_Login_de_juego_V0_LuisDisdem.cpp
-C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P013_Login_de_juego_V0_LuisDisdem\P013_Login_de_juego_V0_LuisDisdem.cpp(32,55): warning C4834: se descarta el valor devuelto de la función con el atributo "nodiscard"
-C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P013_Login_de_juego_V0_LuisDisdem\P013_Login_de_juego_V0_LuisDisdem.cpp(32,41): warning C4390: ';': se encontró una instrucción controlada vacía; ¿es esa la intención?
-  P013_Login_de_juego_V0_LuisDisdem.vcxproj -> C:\Users\LABORATORIO 210\Desktop\Luis datos pls no borrar\24-1_programacion_estructurada\P013_Login_de_juego_V0_LuisDisdem\x64\Debug\P013_Login_de_juego_V0_LuisDisdem.exe
+  P013_Login_de_juego_V0_LuisDisdem.vcxproj -> C:\Users\LABORATORIO 210\Desktop\PROGRAM LUIS\24-1_programacion_estructurada\P013_Login_de_juego_V0_LuisDisdem\x64\Debug\P013_Login_de_juego_V0_LuisDisdem.exe

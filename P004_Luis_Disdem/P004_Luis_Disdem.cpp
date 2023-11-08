@@ -16,11 +16,15 @@ int main()
     int peso;
     float altura;
     float IMC;
+    bool seguir = true;
+    do
+    {
+
     std::cout << "Bienvenido al consultorio de Amerike!\n";
     std::cout << "Cual es tu nombre? " << std::endl; 
     getline(std::cin, Nombre);
     
-    std::cout << "\n ¿Cuentame que es lo que te suede?\n";
+    std::cout << "\n ¿Cuentame que es lo que te sucede?\n";
     getline(std::cin, Relato);
 
 
@@ -46,9 +50,19 @@ int main()
     std::cout << "¿Cual es tu altura?\n";
     std::cin >> altura;
 
-
-    IMC = peso / (altura * altura);
-
+    IMC = peso / (altura * altura); 
     std::cout << "Tu IMC es de\n";
     std::cout << IMC;
+
+    std::cout << "\nDeseas repetir el algoritmo? 0.- NO 1.- SI: \n";
+    std::cin >> seguir; 
+    system("cls"); 
+
+    } while (seguir); 
+
 }
+
+
+
+
+

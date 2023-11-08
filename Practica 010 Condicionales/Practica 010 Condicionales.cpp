@@ -15,16 +15,16 @@ int main()
     do
     { 
         std::cout << "usuario \n";
-        std::cin >> usuario;
+        std::cin >> usuario; 
 
         std::cout << "Contraseña \n";
         std::cin >> contrasena;
        
         if (usuario == "iDisdemYT")
         {
-            if (contrasena == "Botsito69") 
+            if (contrasena == "Luis123") 
             {
-                std::cout << "Welcome to Jurassic Park \n";
+                std::cout << "Bienvenido de nuevo \n";
 
             }
             else

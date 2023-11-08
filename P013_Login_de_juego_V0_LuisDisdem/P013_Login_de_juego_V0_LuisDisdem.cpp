@@ -10,17 +10,18 @@ int main()
 {
     setlocale(LC_ALL, "es_MX.UTF-8");
     std::string usuario;
-    std::string contrasena;
+    std::string contrasena; 
+    bool seguir = true; 
 
-    std::cout << "*************+Bienvenido a la pagina de inicio+*********** \n";
-    std::cout << "*************+Ingresa tu usuario y contraseña+************* \n";
     do
     {
-        std::cout << "********************+Usuario: +******************** \n";
-        std::cin >> usuario;
+        std::cout << "*************+ Bienvenido a la pagina de inicio +*********** \n";
+        std::cout << "*************+ Ingresa tu usuario y contraseña +************* \n";
+        std::cout << "********************+ Usuario: +******************** \n";
+        getline(std:: cin, usuario);
         system("cls");
-        std::cout << "*******************+Contraseña: +*******************\n";
-        std::cin >> contrasena;
+        std::cout << "*******************+ Contraseña: +*******************\n";
+        getline(std:: cin, contrasena);  
         system("cls");
 
         if (usuario == "Disdem")
@@ -39,5 +40,6 @@ int main()
         {
             std::cout << "##########+Intentalo nuevamente, el usuario es incorrecto+##########\n         ";
         }
-    } while (true);   
+    } while (seguir);
+    
 }
