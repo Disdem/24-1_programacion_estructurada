@@ -1,0 +1,3 @@
+﻿  Practica.cpp
+C:\Users\LABORATORIO 210\Desktop\PROGRAM LUIS\24-1_programacion_estructurada\Practica\Practica.cpp(38,21): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  Practica.vcxproj -> C:\Users\LABORATORIO 210\Desktop\PROGRAM LUIS\24-1_programacion_estructurada\Practica\x64\Debug\Practica.exe
