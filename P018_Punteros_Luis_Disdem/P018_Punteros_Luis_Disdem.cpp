@@ -1,40 +1,65 @@
-// P018_Punteros_Luis_Disdem.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
 #include <iostream>
-#include <cstdlib> // Para utilizar la función rand()
-#include <ctime>   // Para inicializar la semilla de números aleatorios
+#include <cstdlib>
+#include <ctime>
+#include <locale.h>
 
 int main() {
+    setlocale(LC_ALL, "ES_MX.UTF-8");
+    bool seguir = true;
+    int fil, col;
 
-	int fil, col;
-	std::cout << "\t\t**Bienvenido al generador de matrizes**\t\t\n";
-	std::cout << "\t\t--A continuacion ingresa el tamaño de la matriz--\t\t\n";
-	std::cout << "\t\t--Intenta que sean pares--\t\t\n";
-	std::cout << "\tPrimero las filas\t\n";
-	std::cin >> fil;
-	std::cout << "\tAhora las columnas\t\n";
-	std::cin >> col;
-	int** Matriz = new int* [fil];
-	if (fil == 2, 3)(col == 2, 3);
-	{
-	for (int i = 0; i < fil; i++)
-	{
-		Matriz[i] = new int[col];
-	}
-	for (int a = 0; a < fil; a++)
-	{
-		for (int b = 0; b < col; b++)
-		{
-			Matriz[a][b] = rand() % 9;
-			std::cout << Matriz[a][b] << " ";
-		}
-		std::cout << "\n";
-	}
-	for (int j = 0; j < col; j++)
-	{
-		delete[] Matriz[j];
-	}
-	delete[] Matriz;
-	}
+    do {
+        std::cout << "\t\t**Bienvenido al generador de matrices**\t\t\n";
+        std::cout << "\t\t--A continuación ingresa el tamaño de la matriz--\t\t\n";
+        std::cout << "\tPrimero las filas\t\n";
+        std::cin >> fil;
+        std::cout << "\tAhora las columnas\t\n";
+        std::cin >> col;
+
+        int** Matriz = new int* [fil];
+
+        if ((fil == 2 && col == 2) || (fil == 3 && col == 3) || (fil == 2 && col == 3)) {
+            std::cout << "\tPara este tamaño de matriz debes colocar los elementos manualmente\t\n";
+            for (int i = 0; i < fil; i++) {
+                Matriz[i] = new int[col];
+                for (int j = 0; j < col; j++) {
+                    std::cout << "\tIngresa un valor para la posición [" << i << "][" << j << "]: ";
+                    std::cin >> Matriz[i][j];
+                }
+            }
+        }
+        else {
+            std::cout << "Continuemos\n";
+            for (int i = 0; i < fil; i++) {
+                Matriz[i] = new int[col];
+            }
+            std::srand(static_cast<unsigned>(std::time(0)));
+
+            for (int i = 0; i < fil; i++) {
+                for (int j = 0; j < col; j++) {
+                    Matriz[i][j] = std::rand() % 9;
+                    std::cout << Matriz[i][j] << " ";
+                }
+                std::cout << "\n";
+            }
+        }
+        if ((fil == 2 && col == 2) || (fil == 3 && col == 3) || (fil == 2 && col == 3)) {
+            std::cout << "\n\tPosiciones de la matriz:\n";
+            for (int i = 0; i < fil; i++) {
+                for (int j = 0; j < col; j++) {
+                    std::cout << "[" << i << "][" << j << "] ";
+                }
+                std::cout << "\n";
+            }
+        }
+        for (int i = 0; i < fil; i++) {
+            delete[] Matriz[i];
+        }
+        delete[] Matriz;
+
+        std::cout << "\t\t¿Quieres repetir el algoritmo?\t\t\n";
+        std::cout << "\t\t1.-si\t" << "\t0.-No\t\t\n";
+        std::cin >> seguir;
+        system("CLS");
+    } while (seguir);
 }
