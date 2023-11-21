@@ -26,7 +26,7 @@ double combinaciones(int n, int r) {
     return tgamma(n + 1) / (tgamma(r + 1) * tgamma(n - r + 1));
 }
 
-// Función para calcular permutaciones (n P r)
+// 5Función para calcular permutaciones (n P r)
 double permutaciones(int n, int r) {
     return tgamma(n + 1) / tgamma(n - r + 1);
 }
@@ -46,9 +46,9 @@ int main() {
     std::cout << "\t\tBienvenido a la calculadora de videojuegos.\t\t\n" <<
         "\t\tEn esta calculadora clacularemos la probabilidad de victoria con datos basados en la teoria, ronadas .etc\t\t\n" <<
         "\t\tPor seleccione el metodo de calculo. \t\t\n" <<
-        "\t\t1.- Probabilidad simple\t" << "\t2.- Probabilidad de eventos independientes (dado)\t\n" <<
-        "\t\t3.- Probabilidad de eventos independientes\t" << "\t4.- Combinaciones\t\n" <<
-        "\t\t5.- Permutaciones\t" << "\t6.- Probabilidad geométrica\t\n";
+        "\t\t1.- Probabilidad simple\t\n" << "\t\t2.- Probabilidad de eventos independientes (dado)\t\n" <<
+        "\t\t3.- Probabilidad de eventos independientes\t\n" << "\t\t4.- Combinaciones\t\n" <<
+        "\t\t5.- Permutaciones\t\n" << "\t\t6.- Probabilidad geométrica\t\n";
     std::cin >> metodo; 
 
     do
@@ -84,18 +84,18 @@ int main() {
 
     case 4:
            // Combinaciones
-    { std::cout << "\nIngrese el valor de n para combinaciones: ";
+    { std::cout << "\nIngrese el total de elementos: ";
     std::cin >> n;
-    std::cout << "Ingrese el valor de r para combinaciones: ";
+    std::cout << "Ingrese el nuemro de elementos a ordenar: ";
     std::cin >> r;
     std::cout << "Combinaciones de " << n << " choose " << r << " es: " << combinaciones(n, r) << std::endl; }
            break;
 
     case 5:
            // Permutaciones
-    { std::cout << "\nIngrese el valor de n para permutaciones: ";
+    { std::cout << "\nIngrese el total de elementos: ";
     std::cin >> n;
-    std::cout << "Ingrese el valor de r para permutaciones: ";
+    std::cout << "Ingrese el nuemro de elementos a ordenar: ";
     std::cin >> r;
     std::cout << "Permutaciones de " << n << " P " << r << " es: " << permutaciones(n, r) << std::endl; }
            break;
@@ -113,7 +113,7 @@ int main() {
         std::cout << "\t\tTe fuiste muy lejos master ;D\t\t\n";
         return 0;
     }
-    std::cout << "Deseas repetir el algoritmo? 0.- NO 1.- SI: ";
+    std::cout << "0.- Salir 1.- Menu principal: ";
     std::cin >> seguir;
     system("cls");
     } while (seguir); {
