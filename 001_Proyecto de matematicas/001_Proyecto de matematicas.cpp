@@ -43,6 +43,9 @@ int main() {
     int metodo;
     bool seguir = true;
 
+
+    do
+    {
     std::cout << "\t\tBienvenido a la calculadora de videojuegos.\t\t\n" <<
         "\t\tEn esta calculadora clacularemos la probabilidad de victoria con datos basados en la teoria, ronadas .etc\t\t\n" <<
         "\t\tPor seleccione el metodo de calculo. \t\t\n" <<
@@ -50,9 +53,6 @@ int main() {
         "\t\t3.- Probabilidad de eventos independientes\t\n" << "\t\t4.- Combinaciones\t\n" <<
         "\t\t5.- Permutaciones\t\n" << "\t\t6.- Probabilidad geométrica\t\n";
     std::cin >> metodo; 
-
-    do
-    {
     switch (metodo) 
     {
     case 1:
@@ -66,7 +66,7 @@ int main() {
 
     case 2:
            // Probabilidad de eventos dependientes
-    {  std::cout << "\nIngrese la probabilidad de A: ";
+    {  std::cout << "\nIngrese la probabilidad de A: ";             
     std::cin >> probabilidadA;
     std::cout << "Ingrese la probabilidad de B dado A: ";
     std::cin >> probabilidadB_dado_A;
