@@ -2,98 +2,204 @@
 // Luis Disdem
 // Toma de desiciones
 // Final
-#include <iostream>
-#include <locale>
-#include <string>
 
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <locale>
 
 int main() {
-	setlocale(LC_ALL, "es_MX.UTF-8");
-	char desiciones;
-	bool repetir = true;
+    srand(static_cast<unsigned int>(std::time(0)));
+    setlocale(LC_ALL, "es_MX.UTF-8");
 
-	do
-	{
-	std::cout << "--------------------------------------------------\n";
-	std::cout << "\tEntre las Penumbras\t\t\n";
-	std::cout << "\tBienvenido al menu principal\t\t\n" <<
-		"\tPresiona Enter para continuar\t\t\n";
-	std::cout << "--------------------------------------------------";
-	std::cin.get(); // Pausa para esperar la entrada del usuario
-	system("cls");
+    char jugarNuevamente;
 
-	std::cout << "----------------------------------------------------------------------------------------------------\n";
-	std::cout << "\tEn un antiguo hospital, rodeado por un " <<
-		"bosque sombrío y envuelto en un manto de misterio.\t\t\n" <<
-		"\tLa enfermera María, conocida por su dedicación, aceptó " <<
-		"quedarse de guardia durante la noche en la desierta " <<
-		"institución\t\t\n" <<
-		"\tAunque el lugar estaba abandonado y la mayoría de los vecinos" <<
-		" evitaban pasar cerca, María consideró que era su " <<
-		"deber " <<
-		"era cuidar de aquel edificio olvidado.\t\t\n" <<
-		"\tLa noche avanzaba lentamente, y el zumbido de los fluorescentes que apenas iluminaba los pasillos oscuros. De repente, la luz titiló y se apagó, dejando a María sumida en la oscuridad. Ante esta situación, María debía decidir:\t\t\n";
-	std::cout << "\ta) Buscar una linterna en la enfermeria\t\t\n" <<
-		"\tb) Explorar a oscuras con cuidado\t\t\n";
-	std::cout << "----------------------------------------------------------------------------------------------------\n";
-	std::cin >> desiciones;
+    do {
+        std::cout << "\t\t--------------------------------------------------------------------------\n";
+        std::cout << "\t\tEstás solo en una mansión oscura y tenebrosa. Sientes que algo te observa.\n";
+        std::cout << "\t\tDe repente, escuchas un ruido proveniente del piso de arriba.\n";
+        std::cout << "\t\t--------------------------------------------------------------------------\n";
 
-	if (desiciones == 'a')
-	{
-		std::cout << "\tMaría optó por buscar una linterna en la enfermería. Mientras revolvía los cajones, escuchó pasos que resonaban por el pasillo. La linterna reveló una figura pálida y demacrada que se desvaneció al instante. Aterrada, María corrió hacia la salida, solo para descubrir que la puerta estaba cerrada. La figura se materializó frente a ella, y la oscuridad la envolvió. \t\t\n";
-		system("cls");
-		std::cout << "\tHaz perdido\t\t\n";
-		std::cout << "\t0.- Salir    1.- Menu\t\t\n";
-		std::cin >> repetir;
-	}
-	else
-	{
-		std::cout << "\tDecidió explorar a oscuras con cuidado. Siguió el sonido de unos susurros y vio destellos de sombras moviéndose por las paredes. Al llegar a la enfermería, encontró una linterna antigua. Al encenderla, las sombras se dispersaron, y María pudo seguir con su guardia.\t\t\n";
+        std::cout << "\t\t------------------------------------------------------------\n";
+        std::cout << "\t\t1. Subir las escaleras para investigar el ruido.\n";
+        std::cout << "\t\t2. Permanecer en el lugar actual y esperar a ver qué sucede.\n";
+        std::cout << "\t\t------------------------------------------------------------\n";
 
-	}
+        int decision1;
+        std::cin >> decision1;
+        system("cls");
 
-	std::cout << "\tMás tarde, María escuchó un suave llanto proveniente de la sala de maternidad, un lugar cargado de recuerdos y nostalgia. Debía decidir:\t\t\n";
-	std::cout << "\ta) Investigar el origen del llanto.\t\t\n" <<
-		"\tb)  Ignorar el sonido y continuar su ronda.\t\t\n";
-	std::cin >> desiciones;
-	if (desiciones == 'a')
-	{
-		std::cout << "\t Decidió investigar el origen del llanto. Al entrar en la sala, encontró una cuna antigua. En ella yacía un bebé con ojos negros que la miraban fijamente. Una risa siniestra llenó la habitación, y las luces parpadearon. María, incapaz de moverse, fue consumida por la oscuridad.\t\t\n";
-		system("cls");
-		std::cout << "\tHaz perdido\t\t\n";
-		std::cout << "\t0.- Salir    1.- Menu\t\t\n";
-		std::cin >> repetir;
-	}
-	else
-	{
-		std::cout << "\t Optó por ignorar el llanto y continuar su ronda. La risa se desvaneció, y el resto de la noche transcurrió sin incidentes.\t\t\n";
-	}
+        if (decision1 == 1) {
+            std::cout << "\t\t-------------------------------------------------------------------\n";
+            std::cout << "\t\tMientras subes las escaleras, sientes que la temperatura disminuye.\n";
+            std::cout << "\t\tLlegas a una puerta entreabierta. ¿Qué haces?\n";
+            std::cout << "\t\t1. Entrar a la habitación.\n";
+            std::cout << "\t\t2. Retroceder y bajar las escaleras.\n";
+            std::cout << "\t\t-------------------------------------------------------------------\n";
 
-	std::cout << "\tAl acercarse el amanecer, María llegó al último pasillo, donde una sombra oscura bloqueaba su camino. Debía decidir:\t\t\n" <<
-		"\ta) Confrontar a la sombra.\t\t\n" <<
-		"\tb) Buscar una salida alternativa a través de las escaleras de incendios.\t\t\n";
-	std::cin >> desiciones;
+            int decision2;
+            std::cin >> decision2;
+            system("cls");
 
-	if (desiciones == 'a')
-	{
-		std::cout << "\tDecidió confrontar a la sombra. La figura se materializó en una anciana encadenada a la pared. ¡Ayúdame!, suplicó. María, llena de compasión, liberó a la anciana, pero en lugar de agradecérselo, la figura la arrastró hacia la oscuridad, donde ambas desaparecieron.\t\t\n";
-		system("cls");
-		std::cout << "\tHaz perdido\t\t\n";
-		std::cout << "\t0.- Salir    1.- Menu\t\t\n";
-		std::cin >> repetir;
-	}
-	else
-	{
-		std::cout << "\t Optó por buscar una salida alternativa. Al descender por las escaleras de incendios, llegó al exterior del hospital. La primera luz del día la envolvió, disipando la oscuridad que la había rodeado toda la noche. Sintió alivio al estar fuera del siniestro edificio, pero algo le hizo voltear hacia atrás.\t\t\n" <<
-			"\tAl mirar hacia el último pasillo, vio la sombra oscura que antes bloqueaba su camino. La figura tomó forma humana y se reveló como el espíritu de una enfermera que había fallecido en circunstancias misteriosas en aquel hospital años atrás.\t\t\n" <<
-			"\tLa enfermera fantasmal le agradeció a María por liberarla de su prisión eterna. *Gracias por liberarme*, susurró la figura antes de desaparecer en un destello de luz. María sintió una extraña sensación de paz y satisfacción.\t\t\n" <<
-			"\tEl hospital, ahora liberado de su oscuro pasado, comenzó a desmoronarse lentamente. María, al alejarse, vio cómo el edificio se desvanecía en el aire, como si nunca hubiera existido. La luz del día iluminó completamente el área, y el bosque circundante cobró vida con sonidos de pájaros y el murmullo del viento.\t\t\n" <<
-			"\tMaría, aunque marcada por la experiencia, salió indemne y con la certeza de que había tomado las decisiones correctas. La leyenda del hospital abandonado desapareció junto con el edificio, dejando atrás solo el eco de una noche de terror que finalmente encontró su redención.\t\t\n";
-		
-	}
-	std::cout << "\t 0.- Salir		1.- Menu\n";
-	std::cin >> repetir;
-	} while (repetir == true);
+            if (decision2 == 1) {
+                std::cout << "\t\t---------------------------------------------------------------------------------\n";
+                std::cout << "\t\tDentro de la habitación, encuentras una figura sombría. Te quedas paralizado y...\n";
+                std::cout << "\t\t¡Game over! Has caído en la trampa de la presencia maligna.\n";
+                std::cout << "\t\t---------------------------------------------------------------------------------\n";
+            }
+            else {
+                std::cout << "\t\t-----------------------------------------------------------------------------------\n";
+                std::cout << "\t\tRetrocedes y decides bajar las escaleras. Sientes un alivio momentáneo.\n";
+                std::cout << "\t\tMientras bajas, escuchas un susurro escalofriante, pero logras salir de la mansión.\n";
+                std::cout << "\t\t¡Felicidades! Escapaste con éxito de la mansión tenebrosa.\n";
+                std::cout << "\t\t-----------------------------------------------------------------------------------\n";
+            }
+        }
+        else {
+            std::cout << "\t\t-------------------------------------------------------------------------------\n";
+            std::cout << "\t\tPermaneces en el lugar, pero el ruido se hace más fuerte.\n";
+            std::cout << "\t\tDe repente, una sombra te envuelve. Te das cuenta de que ya es demasiado tarde.\n";
+            std::cout << "\t\t¡Game over! La oscuridad te consume.\n";
+            std::cout << "\t\t-------------------------------------------------------------------------------\n";
+        }
+
+        std::cout << "\t\t--------------------------------------------------------------------------\n";
+        std::cout << "\t\t\nMiras a tu alrededor y encuentras una llave oxidada en una mesa cercana.\n";
+        std::cout << "\t\t1. Tomar la llave.\n";
+        std::cout << "\t\t2. Ignorar la llave y continuar explorando.\n";
+        std::cout << "\t\t--------------------------------------------------------------------------\n";
+
+        int decision3;
+        std::cin >> decision3;
+        system("cls");
+
+        if (decision3 == 1) {
+            std::cout << "\t\t-----------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tGuardas la llave en tu bolsillo. No estás seguro de para qué será útil, pero parece importante.\n";
+            std::cout << "\t\t-----------------------------------------------------------------------------------------------\n";
+        }
+        else {
+            std::cout << "\t\t---------------------------------------------------------\n";
+            std::cout << "\t\tDecides dejar la llave y continuar explorando la mansión.\n";
+            std::cout << "\t\t---------------------------------------------------------\n";
+        }
+
+        std::cout << "\t\t---------------------------------------------------------------------------\n";
+        std::cout << "\t\tMientras exploras, escuchas risas distorsionadas y murmullos inexplicables.\n";
+        std::cout << "\t\t1. Seguir explorando sin prestar atención a los sonidos.\n";
+        std::cout << "\t\t2. Intentar localizar la fuente de los sonidos.\n";
+        std::cout << "\t\t----------------------------------------------------------------------------\n";
+
+
+        int decision4;
+        std::cin >> decision4;
+        system("cls");
+
+        if (decision4 == 1) {
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tAvanzas con cautela, pero los sonidos te siguen. Comienzas a sentir una presencia cada vez más fuerte.\n";
+            std::cout << "\t\tDe repente, te encuentras atrapado en una ilusión espeluznante. ¡Game over!\n";
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
+        }
+        else {
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tDecides buscar la fuente de los sonidos. Encuentras una puerta secreta y decides abrirla con la llave.\n";
+            std::cout << "\t\tTe enfrentas a una habitación oculta donde descubres la verdad detrás de la maldición de la mansión.\n";
+            std::cout << "\t\t¡Felicidades! Has desentrañado el misterio y te has liberado de la mansión encantada.\n";
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
+        }
+
+        std::cout << "\t\t------------------------------------------------------------------------------------\n";
+        std::cout << "\t\t\nMientras exploras la habitación oculta, encuentras un viejo diario sobre una mesa.\n";
+        std::cout << "\t\t1. Leer el diario para obtener más información.\n";
+        std::cout << "\t\t2. Ignorar el diario y seguir explorando la habitación.\n";
+        std::cout << "\t\t------------------------------------------------------------------------------------\n";
+
+        int decision5;
+        std::cin >> decision5;
+        system("cls");
+
+        if (decision5 == 1) {
+            std::cout << "\t\t--------------------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tAl leer el diario, descubres que la mansión está maldita debido a un trágico evento del pasado.\n";
+            std::cout << "\t\tTe das cuenta de que hay una manera de romper la maldición, pero requiere realizar un ritual específico.\n";
+            std::cout << "\t\t--------------------------------------------------------------------------------------------------------\n";
+        }
+        else {
+            std::cout << "\t\t---------------------------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tDecides no leer el diario y continuar explorando la habitación. Encuentras un extraño artefacto en una esquina.\n";
+            std::cout << "\t\t1. Investigar el artefacto.\n";
+            std::cout << "\t\t2. Dejar el artefacto y continuar con el diario.\n";
+            std::cout << "\t\t---------------------------------------------------------------------------------------------------------------\n";
+
+            int decision6;
+            std::cin >> decision6;
+            system("cls");
+
+            if (decision6 == 1) {
+                std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
+                std::cout << "\t\tAl tocar el artefacto, sientes una extraña energía. De repente, te encuentras en un lugar completamente diferente.\n";
+                std::cout << "\t\t¡Game over! Has activado un portal dimensional sin darte cuenta.\n";
+                std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
+            }
+            else {
+                std::cout << "\t\t-----------------------------------------------------------------------------------------------------------\n";
+                std::cout << "\t\tDecides dejar el artefacto y retomar la lectura del diario.\n";
+                std::cout << "\t\tDescubres que la única manera de romper la maldición es realizar un ritual específico en la sala principal.\n";
+                std::cout << "\t\t-----------------------------------------------------------------------------------------------------------\n";
+            }
+        }
+
+        std::cout << "\t\t-------------------------------------------------------------------------------------\n";
+        std::cout << "\t\t\nDecides regresar a la sala principal para realizar el ritual y romper la maldición.\n";
+        std::cout << "\t\t1. Ir directamente a la sala principal.\n";
+        std::cout << "\t\t2. Inspeccionar otras habitaciones antes de ir a la sala principal.\n";
+        std::cout << "\t\t-------------------------------------------------------------------------------------\n";
+
+        int decision7;
+        std::cin >> decision7;
+        system("cls");
+
+        if (decision7 == 1) {
+            std::cout << "\t\t-------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tLlegas a la sala principal y comienzas el ritual. Sientes una presión en el aire y...\n";
+            std::cout << "\t\t¡Felicidades! Has logrado romper la maldición y escapar de la mansión.\n";
+            std::cout << "\t\t-------------------------------------------------------------------------------------\n";
+        }
+        else {
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
+            std::cout << "\t\tDecides inspeccionar otras habitaciones antes de ir a la sala principal. En una de las habitaciones, encuentras...\n";
+            std::cout << "\t\t1. Una pista crucial para el ritual.\n";
+            std::cout << "\t\t2. Un peligro inesperado que te atrapa.\n";
+            std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
+
+            int decision8;
+            std::cin >> decision8;
+            system("cls");
+
+            if (decision8 == 1) {
+                std::cout << "\t\t--------------------------------------------------------------------------------------\n";
+                std::cout << "\t\tEncuentras una pista crucial que te ayuda a realizar el ritual de manera más efectiva.\n";
+                std::cout << "\t\tFinalmente, en la sala principal, realizas el ritual con éxito y rompes la maldición.\n";
+                std::cout << "\t\t¡Felicidades! Has escapado de la mansión y revelado todos sus secretos.\n";
+                std::cout << "\t\t--------------------------------------------------------------------------------------\n";
+            }
+            else {
+                std::cout << "\t\t---------------------------------------------------------------\n";
+                std::cout << "\t\tTe enfrentas a un peligro inesperado que te atrapa. ¡Game over!\n";
+                std::cout << "\t\t---------------------------------------------------------------\n";
+            }
+        }
+
+        std::cout << "\t\t----------------------------------\n";
+        std::cout << "\t\t\n¿Quieres jugar nuevamente? (s/n): ";
+        std::cout << "\t\t----------------------------------\n";
+        std::cin >> jugarNuevamente;
+        system("cls");
+
+    } while (jugarNuevamente == 's' || jugarNuevamente == 'S');
+
+    return 0;
 }
 
 
