@@ -15,6 +15,14 @@ int main() {
     char jugarNuevamente;
 
     do {
+        std::cout << "\t--------------------------------------------------\n";
+        std::cout << "\tEntre las Penumbras\t\t\n";
+        std::cout << "\tBienvenido al menu principal\t\t\n" <<
+            "\tPresiona Enter para continuar\t\t\n";
+        std::cout << "\t--------------------------------------------------";
+        std::cin.get(); 
+        system("cls");
+
         std::cout << "\t\t--------------------------------------------------------------------------\n";
         std::cout << "\t\tEstás solo en una mansión oscura y tenebrosa. Sientes que algo te observa.\n";
         std::cout << "\t\tDe repente, escuchas un ruido proveniente del piso de arriba.\n";
@@ -44,8 +52,14 @@ int main() {
             if (decision2 == 1) {
                 std::cout << "\t\t---------------------------------------------------------------------------------\n";
                 std::cout << "\t\tDentro de la habitación, encuentras una figura sombría. Te quedas paralizado y...\n";
-                std::cout << "\t\t¡Game over! Has caído en la trampa de la presencia maligna.\n";
+                std::cout << "\n";
+                std::cout << "\t\t============\n";
+                std::cout << "\t\t==GameOver==\n";  
+                std::cout << "\t\t============\n";
+                std::cout << "\n";
+                std::cout << "\t\tHas caído en la trampa de la presencia maligna.\n";
                 std::cout << "\t\t---------------------------------------------------------------------------------\n";
+                return 0;
             }
             else {
                 std::cout << "\t\t-----------------------------------------------------------------------------------\n";
@@ -59,12 +73,18 @@ int main() {
             std::cout << "\t\t-------------------------------------------------------------------------------\n";
             std::cout << "\t\tPermaneces en el lugar, pero el ruido se hace más fuerte.\n";
             std::cout << "\t\tDe repente, una sombra te envuelve. Te das cuenta de que ya es demasiado tarde.\n";
-            std::cout << "\t\t¡Game over! La oscuridad te consume.\n";
+            std::cout << "\n";
+            std::cout << "\t\t============\n";
+            std::cout << "\t\t=!GameOver¡=\n";
+            std::cout << "\t\t============\n";
+            std::cout << "\n";
+            std::cout << "\t\tLa oscuridad te consume.\n";
             std::cout << "\t\t-------------------------------------------------------------------------------\n";
+            return 0;
         }
 
         std::cout << "\t\t--------------------------------------------------------------------------\n";
-        std::cout << "\t\t\nMiras a tu alrededor y encuentras una llave oxidada en una mesa cercana.\n";
+        std::cout << "\t\tMiras a tu alrededor y encuentras una llave oxidada en una mesa cercana.\n";
         std::cout << "\t\t1. Tomar la llave.\n";
         std::cout << "\t\t2. Ignorar la llave y continuar explorando.\n";
         std::cout << "\t\t--------------------------------------------------------------------------\n";
@@ -98,8 +118,14 @@ int main() {
         if (decision4 == 1) {
             std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
             std::cout << "\t\tAvanzas con cautela, pero los sonidos te siguen. Comienzas a sentir una presencia cada vez más fuerte.\n";
-            std::cout << "\t\tDe repente, te encuentras atrapado en una ilusión espeluznante. ¡Game over!\n";
+            std::cout << "\t\tDe repente, te encuentras atrapado en una ilusión espeluznante.\n";
+            std::cout << "\n";
+            std::cout << "\t\t============\n";
+            std::cout << "\t\t=!GameOver¡=\n";
+            std::cout << "\t\t============\n";
+            std::cout << "\n";
             std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
+            return 0;
         }
         else {
             std::cout << "\t\t------------------------------------------------------------------------------------------------------\n";
@@ -139,8 +165,14 @@ int main() {
             if (decision6 == 1) {
                 std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
                 std::cout << "\t\tAl tocar el artefacto, sientes una extraña energía. De repente, te encuentras en un lugar completamente diferente.\n";
-                std::cout << "\t\t¡Game over! Has activado un portal dimensional sin darte cuenta.\n";
+                std::cout << "\t\tHas activado un portal dimensional sin darte cuenta.\n";
+                std::cout << "\n";
+                std::cout << "\t\t============\n";
+                std::cout << "\t\t=!GameOver¡=\n";
+                std::cout << "\t\t============\n";
+                std::cout << "\n";
                 std::cout << "\t\t------------------------------------------------------------------------------------------------------------------\n";
+                return 0;
             }
             else {
                 std::cout << "\t\t-----------------------------------------------------------------------------------------------------------\n";
@@ -186,8 +218,14 @@ int main() {
             }
             else {
                 std::cout << "\t\t---------------------------------------------------------------\n";
-                std::cout << "\t\tTe enfrentas a un peligro inesperado que te atrapa. ¡Game over!\n";
+                std::cout << "\t\tTe enfrentas a un peligro inesperado que te atrapa.\n";
+                std::cout << "\n";
+                std::cout << "\t\t============\n";
+                std::cout << "\t\t=!GameOver¡=\n";
+                std::cout << "\t\t============\n";
+                std::cout << "\n";
                 std::cout << "\t\t---------------------------------------------------------------\n";
+                return 0;
             }
         }
 
