@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que llene una matriz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{42210023-BFA3-44AD-9B43-77E780478326}|Programa que llene una matriz.vcxproj|C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que llene una matriz\\Programa que llene una matriz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{42210023-BFA3-44AD-9B43-77E780478326}|Programa que llene una matriz.vcxproj|solutionrelative:Programa que llene una matriz.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Programa que llene una matriz.cpp",
+              "DocumentMoniker": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que llene una matriz\\Programa que llene una matriz.cpp",
+              "RelativeDocumentMoniker": "Programa que llene una matriz.cpp",
+              "ToolTip": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que llene una matriz\\Programa que llene una matriz.cpp",
+              "RelativeToolTip": "Programa que llene una matriz.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-21T22:41:30.045Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
