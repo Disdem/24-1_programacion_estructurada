@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que reciba enteros y los devuelva\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04535812-8276-45CA-81C3-1F4433A81121}|Programa que reciba enteros y los devuelva.vcxproj|C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que reciba enteros y los devuelva\\Programa que reciba enteros y los devuelva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{04535812-8276-45CA-81C3-1F4433A81121}|Programa que reciba enteros y los devuelva.vcxproj|solutionrelative:Programa que reciba enteros y los devuelva.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Programa que reciba enteros y los devuelva.cpp",
+              "DocumentMoniker": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que reciba enteros y los devuelva\\Programa que reciba enteros y los devuelva.cpp",
+              "RelativeDocumentMoniker": "Programa que reciba enteros y los devuelva.cpp",
+              "ToolTip": "C:\\Users\\disde\\OneDrive\\Documentos\\GitHub\\24-1_programacion_estructurada\\Programa que reciba enteros y los devuelva\\Programa que reciba enteros y los devuelva.cpp",
+              "RelativeToolTip": "Programa que reciba enteros y los devuelva.cpp",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T20:30:29.629Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
